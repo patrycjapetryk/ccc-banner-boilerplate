@@ -12,6 +12,7 @@
   letter-spacing: 0.02em;
   margin: 20px 10px 0;
   transition: 0.2s;
+  border-radius: $button-border-radius;
 
   @media (max-width: $breakpoint-small-mobile-width) {
     padding: $button-padding-mobile;
