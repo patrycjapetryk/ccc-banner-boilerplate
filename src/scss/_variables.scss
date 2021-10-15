@@ -1,0 +1,56 @@
+// colors
+
+$black: #000000;
+$white: #ffffff;
+$dark-grey: #222222;
+$light-grey: #f8f8f8;
+
+$main-color: $white;
+$second-color: $black;
+
+// fonts family
+
+$main-font: 'Univers LT W05_55 Roman', sans-serif;
+$main-font-bold: 'UniversLTPro-BoldExt', sans-serif;
+$second-font: 'Helvetica Neue Black Extended', sans-serif;
+
+// fonts size
+
+$global-font-size: 16px;
+$global-font-size-s: 12px;
+$global-font-size-m: 26px;
+$global-font-size-l: 62px;
+
+$button-font-size: 12px;
+$button-padding: 10px 40px;
+$button-padding-mobile: 8px 30px;
+$button-border-radius: 0;
+
+$global-line-hight: 1.4;
+$global-font-weight: normal;
+$global-letter-spacing: normal;
+
+// breakpoints
+
+$breakpoint-large-desktop-width: 2560px;
+$breakpoint-desktop-width: 1440px;
+$breakpoint-laptop-width: 977px;
+$breakpoint-tablet-width: 768px;
+$breakpoint-mobile-width: 453px;
+$breakpoint-small-mobile-width: 375px;
+
+// max & min main width
+
+$baner-min-width: 320px;
+
+$slider-max-width: 1300px;
+$slider-max-height: 600px;
+
+$listing-max-width: 1300px;
+$listing-max-height: 340px;
+
+$infobox-max-width: 313px;
+$infobox-max-height: 469px;
+
+$square-max-width: 638px;
+$square-max-height: 638px;

@@ -1,0 +1,24 @@
+@import '../_variables';
+@import '../_mixins';
+
+.button {
+  display: inline-block;
+  padding: $button-padding;
+  font-size: $button-font-size;
+  border: 1px solid $white;
+  color: $main-color;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  margin: 20px 10px 0;
+  transition: 0.2s;
+
+  @media (max-width: $breakpoint-small-mobile-width) {
+    padding: $button-padding-mobile;
+  }
+
+  &:hover {
+    background-color: $white;
+    color: $black;
+  }
+}

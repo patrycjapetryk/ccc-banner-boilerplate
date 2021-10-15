@@ -1,0 +1,119 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+module.exports = {
+  entry: {
+    index: './src/js/index.js',
+    timer: './src/js/timer.js',
+    scroll: './src/js/scroll.js',
+  },
+  output: {
+    filename: 'js/[name].[hash:8].js',
+    path: __dirname + '/dist/',
+    assetModuleFilename: 'images/[name.[hash:8][ext][query]',
+  },
+  module: {
+    rules: [
+      {
+        test: [/.js$/],
+        exclude: /(node_modules)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-env'],
+          },
+        },
+      },
+      {
+        test: /\.html$/i,
+        loader: 'html-loader',
+        options: {
+          sources: {
+            list: [
+              {
+                tag: 'img',
+                attribute: 'src',
+                type: 'src',
+              },
+              {
+                tag: 'img',
+                attribute: 'data-gallery-src',
+                type: 'src',
+              },
+              {
+                tag: 'source',
+                attribute: 'src',
+                type: 'src',
+              },
+              {
+                tag: 'video',
+                attribute: 'poster',
+                type: 'src',
+              },
+            ],
+          },
+          minimize: false,
+        },
+      },
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: 'asset/resource',
+      },
+      {
+        test: /\.mp4$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: 'video/[hash:8][ext][query]',
+        },
+      },
+    ],
+  },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/pages/index.html',
+      inject: 'body',
+      chunks: ['index', 'timer', 'scroll'],
+      filename: 'index.html',
+      minify: false,
+    }),
+
+    // new HtmlWebpackPlugin({
+    //   template: './src/pages/slider.html',
+    //   inject: 'body',
+    //   chunks: ['index', 'timer', 'scroll'],
+    //   filename: 'index.html',
+    //   minify: false,
+    // }),
+
+    // new HtmlWebpackPlugin({
+    //   template: './src/pages/listing.html',
+    //   inject: 'body',
+    //   chunks: ['index'],
+    //   filename: 'index.html',
+    //   minify: false,
+    // }),
+
+    // new HtmlWebpackPlugin({
+    //   template: './src/pages/infobox-1.html',
+    //   inject: 'body',
+    //   chunks: ['index'],
+    //   filename: 'index.html',
+    //   minify: false,
+    // }),
+
+    // new HtmlWebpackPlugin({
+    //   template: './src/pages/infobox-2.html',
+    //   inject: 'body',
+    //   chunks: ['index'],
+    //   filename: 'index.html',
+    //   minify: false,
+    // }),
+
+    // new HtmlWebpackPlugin({
+    //   template: './src/pages/square.html',
+    //   inject: 'body',
+    //   chunks: ['index'],
+    //   filename: 'index.html',
+    //   minify: false,
+    // }),
+  ],
+};
