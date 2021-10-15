@@ -93,4 +93,30 @@
     padding: 0 0 0 9px;
     margin: 0 0 25px;
   }
+
+  &__logo-container {
+    width: 13%;
+
+    @media (max-width: $breakpoint-tablet-width) {
+      width: 22%;
+    }
+  }
+
+  &__logo {
+    width: 100%;
+    height: auto;
+  }
+
+  &__title-container {
+    width: 36%;
+
+    @media (max-width: $breakpoint-tablet-width) {
+      width: 74%;
+    }
+  }
+
+  &__image-title {
+    width: 100%;
+    height: auto;
+  }
 }
