@@ -3,7 +3,7 @@
 
 .slider {
   color: $main-color;
-  background-color: $main-background-color;
+  // background-color: $main-background-color;
   font-family: $main-font;
   font-size: $global-font-size;
   line-height: $global-line-hight;
@@ -26,6 +26,12 @@
     box-sizing: inherit;
   }
 
+  background: url(../assets/images/jf.jpg) $main-background-color no-repeat;
+
+  @media (max-width: $breakpoint-laptop-width) {
+    background: transparent;
+  }
+
   &__content {
     position: absolute;
     left: 0;
@@ -33,71 +39,45 @@
     top: 0;
     bottom: 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: $breakpoint-laptop-width) {
+      justify-content: space-around;
+    }
   }
 
   &__video {
     position: absolute;
-    left: 50%;
-    top: 0;
     width: auto;
-    height: 100%;
-    transform: translateX(-50%);
-
+    height: calc(100% + 2px);
+    top: 0;
+    right: 0;
     object-fit: cover;
-  }
-
-  &__header {
-    width: 100%;
-    margin-top: 30px;
-  }
-
-  &__title {
-    font-family: $second-font;
-    font-size: $global-font-size-l;
-    margin: 0;
 
     @media (max-width: $breakpoint-laptop-width) {
-      font-size: 60px;
-    }
-
-    @media (max-width: $breakpoint-tablet-width) {
-      font-size: 47px;
-    }
-
-    @media (max-width: $breakpoint-mobile-width) {
-      font-size: 38px;
-    }
-
-    @media (max-width: $breakpoint-small-mobile-width) {
-      font-size: 32px;
+      left: 50%;
+      right: auto;
+      transform: translateX(-50%);
     }
   }
 
-  &__subtitle {
-    display: inline-block;
-    font-family: $second-font;
-    font-size: $global-font-size-m;
-    margin: 0 0 5px;
-
-    @media (max-width: $breakpoint-mobile-width) {
-      font-size: 23px;
-    }
+  &__logo-container {
+    width: 13%;
   }
 
-  &__description {
+  &__logo {
     width: 100%;
-    font-size: $global-font-size-s;
-    display: block;
-    padding: 0 30%;
+    height: auto;
+  }
 
-    @media (max-width: $breakpoint-laptop-width) {
-      padding: 0 20%;
-    }
+  &__title-container {
+    width: 36%;
+  }
 
-    @media (max-width: $breakpoint-mobile-width) {
-      padding: 0 10%;
-    }
+  &__image-title {
+    width: 100%;
+    height: auto;
   }
 }

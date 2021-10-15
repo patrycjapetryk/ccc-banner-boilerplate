@@ -1,13 +1,13 @@
 // colors
 
 $black: #000000;
-$white: #ffffff;
+$white: #f7f6f7;
 $dark-grey: #222222;
 $light-grey: #f8f8f8;
 
-$main-color: $white;
+$main-color: $black;
 $second-color: $black;
-$main-background-color: $black;
+$main-background-color: $white;
 
 // fonts family
 
@@ -31,13 +31,14 @@ $global-letter-spacing: normal;
 $button-font-size: 12px;
 $button-padding: 10px 40px;
 $button-padding-mobile: 8px 30px;
-$button-border-radius: 0;
+$button-border-radius: 30px;
 
 // breakpoints
 
 $breakpoint-large-desktop-width: 2560px;
 $breakpoint-desktop-width: 1440px;
-$breakpoint-laptop-width: 977px;
+$breakpoint-laptop-width: 1080px;
+$breakpoint-bigger-tablet-width: 977px;
 $breakpoint-tablet-width: 768px;
 $breakpoint-mobile-width: 453px;
 $breakpoint-small-mobile-width: 375px;
