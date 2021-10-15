@@ -65,6 +65,10 @@
 
   &__logo-container {
     width: 13%;
+
+    @media (max-width: $breakpoint-tablet-width) {
+      width: 22%;
+    }
   }
 
   &__logo {
@@ -74,6 +78,10 @@
 
   &__title-container {
     width: 36%;
+
+    @media (max-width: $breakpoint-tablet-width) {
+      width: 74%;
+    }
   }
 
   &__image-title {
