@@ -2,6 +2,7 @@
 @import '../_mixins';
 
 .button {
+  font-family: $main-font;
   display: inline-block;
   padding: $button-padding;
   font-size: $button-font-size;

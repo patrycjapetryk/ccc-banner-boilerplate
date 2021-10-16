@@ -9,7 +9,7 @@ module.exports = {
   output: {
     filename: 'js/[name].[hash:8].js',
     path: __dirname + '/dist/',
-    assetModuleFilename: 'images/[name.[hash:8][ext][query]',
+    assetModuleFilename: 'images/[name].[hash:8][ext][query]',
   },
   module: {
     rules: [
@@ -59,22 +59,22 @@ module.exports = {
         type: 'asset/resource',
       },
       {
-        test: /\.mp4$/i,
+        test: /\.(mp4|webm)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'video/[hash:8][ext][query]',
+          filename: 'video/[name].[hash:8][ext][query]',
         },
       },
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/pages/index.html',
-      inject: 'body',
-      chunks: ['index', 'timer', 'scroll'],
-      filename: 'index.html',
-      minify: false,
-    }),
+    // new HtmlWebpackPlugin({
+    //   template: './src/pages/index.html',
+    //   inject: 'body',
+    //   chunks: ['index', 'timer', 'scroll'],
+    //   filename: 'index.html',
+    //   minify: false,
+    // }),
 
     // new HtmlWebpackPlugin({
     //   template: './src/pages/slider.html',
@@ -108,12 +108,12 @@ module.exports = {
     //   minify: false,
     // }),
 
-    // new HtmlWebpackPlugin({
-    //   template: './src/pages/square.html',
-    //   inject: 'body',
-    //   chunks: ['index'],
-    //   filename: 'index.html',
-    //   minify: false,
-    // }),
+    new HtmlWebpackPlugin({
+      template: './src/pages/square.html',
+      inject: 'body',
+      chunks: ['index'],
+      filename: 'index.html',
+      minify: false,
+    }),
   ],
 };
