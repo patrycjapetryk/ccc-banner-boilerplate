@@ -67,13 +67,13 @@ module.exports = {
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/pages/index.html',
-      inject: 'body',
-      chunks: ['index', 'timer', 'scroll'],
-      filename: 'index.html',
-      minify: false,
-    }),
+    // new HtmlWebpackPlugin({
+    //   template: './src/pages/index.html',
+    //   inject: 'body',
+    //   chunks: ['index', 'timer', 'scroll'],
+    //   filename: 'index.html',
+    //   minify: false,
+    // }),
 
     // new HtmlWebpackPlugin({
     //   template: './src/pages/slider.html',
@@ -114,5 +114,13 @@ module.exports = {
     //   filename: 'index.html',
     //   minify: false,
     // }),
+
+    new HtmlWebpackPlugin({
+      template: './src/pages/slider-nav.html',
+      inject: 'body',
+      chunks: ['index'],
+      filename: 'index.html',
+      minify: false,
+    }),
   ],
 };
