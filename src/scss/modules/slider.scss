@@ -1,6 +1,10 @@
 @import '../_variables';
 @import '../_mixins';
 
+.c-zone_col {
+  width: 100%;
+}
+
 .slider {
   color: $main-color;
   background-color: $main-background-color;
@@ -99,5 +103,10 @@
     @media (max-width: $breakpoint-mobile-width) {
       padding: 0 10%;
     }
+  }
+
+  &__cta {
+    display: flex;
+    justify-content: center;
   }
 }

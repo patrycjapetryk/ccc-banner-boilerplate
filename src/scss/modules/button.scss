@@ -2,7 +2,7 @@
 @import '../_mixins';
 
 .button {
-  display: inline-block;
+  display: block;
   padding: $button-padding;
   font-size: $button-font-size;
   border: 1px solid $white;

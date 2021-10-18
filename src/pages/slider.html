@@ -15,6 +15,7 @@
         loop
         muted
         playsinline
+        preload="none"
       >
         <source src="../assets/video/bf-slider.mp4" type="video/mp4" />
         <source src="../assets/video/bf-slider.webm" type="video/webm" />
@@ -25,30 +26,41 @@
           <h2 class="slider__title">BLACK WEEK</h2>
           <span class="slider__subtitle">W Klubie CCC</span>
           <div class="slider__cta">
-            <a class="button" href="#">zaloguj się w klubie</a>
-            <a class="button" href="#">zarejestruj się w klubie</a>
+            <a class="button" href="#">zobacz więcej</a>
           </div>
         </header>
 
         <div class="timer">
           <h3 class="timer__title">DO ROZPOCZĘCIA PROMOCJI POZOSTAŁO:</h3>
           <div class="timer__time-wrapper">
-            <span class="timer__time timer__time--days timer__time--days-js"> 00 </span>
+            <span class="timer__time timer__time--days timer__time--days-js">
+              0
+            </span>
             <span class="timer__label">DZIEŃ</span>
           </div>
           <span class="timer__colon">:</span>
           <div class="timer__time-wrapper">
-            <span class="timer__time timer__time--hours timer__time--hours-js"> 00 </span>
+            <span class="timer__time timer__time--hours timer__time--hours-js">
+              00
+            </span>
             <span class="timer__label">GODZINA</span>
           </div>
           <span class="timer__colon">:</span>
           <div class="timer__time-wrapper">
-            <span class="timer__time timer__time--minutes timer__time--minutes-js"> 00 </span>
+            <span
+              class="timer__time timer__time--minutes timer__time--minutes-js"
+            >
+              00
+            </span>
             <span class="timer__label">MINUTA</span>
           </div>
           <span class="timer__colon">:</span>
           <div class="timer__time-wrapper">
-            <span class="timer__time timer__time--seconds timer__time--seconds-js"> 00 </span>
+            <span
+              class="timer__time timer__time--seconds timer__time--seconds-js"
+            >
+              00
+            </span>
             <span class="timer__label">SEKUNDA</span>
           </div>
         </div>

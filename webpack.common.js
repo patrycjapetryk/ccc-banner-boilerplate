@@ -4,7 +4,6 @@ module.exports = {
   entry: {
     index: './src/js/index.js',
     timer: './src/js/timer.js',
-    scroll: './src/js/scroll.js',
   },
   output: {
     filename: 'js/[name].[hash:8].js',
@@ -59,7 +58,7 @@ module.exports = {
         type: 'asset/resource',
       },
       {
-        test: /\.mp4$/i,
+        test: /\.mp4|webm$/i,
         type: 'asset/resource',
         generator: {
           filename: 'video/[name].[hash:8][ext][query]',
@@ -68,21 +67,21 @@ module.exports = {
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/pages/index.html',
-      inject: 'body',
-      chunks: ['index', 'timer', 'scroll'],
-      filename: 'index.html',
-      minify: false,
-    }),
-
     // new HtmlWebpackPlugin({
-    //   template: './src/pages/slider.html',
+    //   template: './src/pages/index.html',
     //   inject: 'body',
     //   chunks: ['index', 'timer', 'scroll'],
     //   filename: 'index.html',
     //   minify: false,
     // }),
+
+    new HtmlWebpackPlugin({
+      template: './src/pages/slider.html',
+      inject: 'body',
+      chunks: ['index', 'timer'],
+      filename: 'index.html',
+      minify: false,
+    }),
 
     // new HtmlWebpackPlugin({
     //   template: './src/pages/listing.html',
