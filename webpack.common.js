@@ -74,13 +74,13 @@ module.exports = {
     //   filename: 'index.html',
     //   minify: false,
     // }),
-    // new HtmlWebpackPlugin({
-    //   template: './src/pages/slider.html',
-    //   inject: 'body',
-    //   chunks: ['index', 'timer'],
-    //   filename: 'index.html',
-    //   minify: false,
-    // }),
+    new HtmlWebpackPlugin({
+      template: './src/pages/slider.html',
+      inject: 'body',
+      chunks: ['index', 'timer'],
+      filename: 'index.html',
+      minify: false,
+    }),
     // new HtmlWebpackPlugin({
     //   template: './src/pages/listing.html',
     //   inject: 'body',
@@ -89,13 +89,13 @@ module.exports = {
     //   minify: false,
     // }),
 
-    new HtmlWebpackPlugin({
-      template: './src/pages/infobox-1.html',
-      inject: 'body',
-      chunks: ['index'],
-      filename: 'index.html',
-      minify: false,
-    }),
+    // new HtmlWebpackPlugin({
+    //   template: './src/pages/infobox-1.html',
+    //   inject: 'body',
+    //   chunks: ['index'],
+    //   filename: 'index.html',
+    //   minify: false,
+    // }),
 
     // new HtmlWebpackPlugin({
     //   template: './src/pages/square.html',
