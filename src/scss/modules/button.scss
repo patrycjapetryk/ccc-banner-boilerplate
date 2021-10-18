@@ -5,12 +5,13 @@
   display: block;
   padding: $button-padding;
   font-size: $button-font-size;
+  font-family: $button-font-family;
   border: 1px solid $white;
   color: $main-color;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.02em;
-  margin: 20px 10px 0;
+  margin: 0 10px;
   transition: 0.2s;
   border-radius: $button-border-radius;
 

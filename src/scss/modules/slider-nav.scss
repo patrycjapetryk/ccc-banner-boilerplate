@@ -1,0 +1,19 @@
+@import '../_variables';
+@import '../_mixins';
+
+.slider-nav {
+  background-color: $main-background-color;
+  width: 100%;
+  max-width: $slider-max-width;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+
+  box-sizing: border-box;
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+}

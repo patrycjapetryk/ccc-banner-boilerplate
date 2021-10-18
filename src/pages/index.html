@@ -15,9 +15,10 @@
         loop
         muted
         playsinline
+        preload="none"
       >
-        <source src="../assets/video/bf-slider.mp4" type="video/mp4" />
         <source src="../assets/video/bf-slider.webm" type="video/webm" />
+        <source src="../assets/video/bf-slider.mp4" type="video/mp4" />
       </video>
 
       <div class="slider__content">
@@ -25,39 +26,55 @@
           <h2 class="slider__title">BLACK WEEK</h2>
           <span class="slider__subtitle">W Klubie CCC</span>
           <div class="slider__cta">
-            <a class="button" href="#">zaloguj się w klubie</a>
-            <a class="button" href="#">zarejestruj się w klubie</a>
+            <a class="button" href="#">zobacz więcej</a>
           </div>
         </header>
 
         <div class="timer">
           <h3 class="timer__title">DO ROZPOCZĘCIA PROMOCJI POZOSTAŁO:</h3>
           <div class="timer__time-wrapper">
-            <span class="timer__time timer__time--days timer__time--days-js"> 00 </span>
+            <span class="timer__time timer__time--days timer__time--days-js">
+              0
+            </span>
             <span class="timer__label">DZIEŃ</span>
           </div>
           <span class="timer__colon">:</span>
           <div class="timer__time-wrapper">
-            <span class="timer__time timer__time--hours timer__time--hours-js"> 00 </span>
+            <span class="timer__time timer__time--hours timer__time--hours-js">
+              00
+            </span>
             <span class="timer__label">GODZINA</span>
           </div>
           <span class="timer__colon">:</span>
           <div class="timer__time-wrapper">
-            <span class="timer__time timer__time--minutes timer__time--minutes-js"> 00 </span>
+            <span
+              class="timer__time timer__time--minutes timer__time--minutes-js"
+            >
+              00
+            </span>
             <span class="timer__label">MINUTA</span>
           </div>
           <span class="timer__colon">:</span>
           <div class="timer__time-wrapper">
-            <span class="timer__time timer__time--seconds timer__time--seconds-js"> 00 </span>
+            <span
+              class="timer__time timer__time--seconds timer__time--seconds-js"
+            >
+              00
+            </span>
             <span class="timer__label">SEKUNDA</span>
           </div>
         </div>
       </div>
     </div>
 
-    <div style="height: 100px"></div>
+    <div class="slider-nav">
+      <a href="#" class="button">Zaloguj się w Klubie</a>
+      <a href="#" class="button">Zarejestruj się w Klubie</a>
+    </div>
 
-    <div class="listing">
+    <!-- <div style="height: 100px"></div> -->
+
+    <!-- <div class="listing">
       <video
         class="listing__video listing__video--js"
         poster="../assets/images/bf-listing-638x320-poster.jpg"
@@ -84,11 +101,11 @@
           </div>
         </header>
       </div>
-    </div>
+    </div> -->
 
-    <div style="height: 100px"></div>
+    <!-- <div style="height: 100px"></div> -->
 
-    <div style="display: flex">
+    <!-- <div style="display: flex">
       <div class="infobox">
         <video
           class="infobox__video infobox__video--js"
@@ -138,11 +155,11 @@
           </header>
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div style="height: 100px"></div>
+    <!-- <div style="height: 100px"></div> -->
 
-    <div class="square">
+    <!-- <div class="square">
       <video
         class="square__video square__video--js"
         poster="../assets/images/bf-square-poster.jpg"
@@ -163,8 +180,8 @@
           </div>
         </header>
       </div>
-    </div>
+    </div> -->
 
-    <div style="height: 100px"></div>
+    <!-- <div style="height: 100px"></div> -->
   </body>
 </html>
