@@ -70,11 +70,10 @@ module.exports = {
     // new HtmlWebpackPlugin({
     //   template: './src/pages/index.html',
     //   inject: 'body',
-    //   chunks: ['index', 'timer', 'scroll'],
+    //   chunks: ['index', 'timer'],
     //   filename: 'index.html',
     //   minify: false,
     // }),
-
     // new HtmlWebpackPlugin({
     //   template: './src/pages/slider.html',
     //   inject: 'body',
@@ -82,7 +81,6 @@ module.exports = {
     //   filename: 'index.html',
     //   minify: false,
     // }),
-
     // new HtmlWebpackPlugin({
     //   template: './src/pages/listing.html',
     //   inject: 'body',
@@ -90,15 +88,13 @@ module.exports = {
     //   filename: 'index.html',
     //   minify: false,
     // }),
-
-    // new HtmlWebpackPlugin({
-    //   template: './src/pages/infobox-1.html',
-    //   inject: 'body',
-    //   chunks: ['index'],
-    //   filename: 'index.html',
-    //   minify: false,
-    // }),
-
+    new HtmlWebpackPlugin({
+      template: './src/pages/infobox-1.html',
+      inject: 'body',
+      chunks: ['index'],
+      filename: 'index.html',
+      minify: false,
+    }),
     // new HtmlWebpackPlugin({
     //   template: './src/pages/infobox-2.html',
     //   inject: 'body',
@@ -106,7 +102,6 @@ module.exports = {
     //   filename: 'index.html',
     //   minify: false,
     // }),
-
     // new HtmlWebpackPlugin({
     //   template: './src/pages/square.html',
     //   inject: 'body',
@@ -114,13 +109,12 @@ module.exports = {
     //   filename: 'index.html',
     //   minify: false,
     // }),
-
-    new HtmlWebpackPlugin({
-      template: './src/pages/slider-nav.html',
-      inject: 'body',
-      chunks: ['index'],
-      filename: 'index.html',
-      minify: false,
-    }),
+    // new HtmlWebpackPlugin({
+    //   template: './src/pages/slider-nav.html',
+    //   inject: 'body',
+    //   chunks: ['index'],
+    //   filename: 'index.html',
+    //   minify: false,
+    // }),
   ],
 };

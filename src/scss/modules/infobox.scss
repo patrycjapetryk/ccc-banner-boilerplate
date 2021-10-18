@@ -63,6 +63,11 @@
     display: block;
     font-family: $second-font;
     font-size: 22px;
-    margin: -10px 0;
+    margin: 0;
+  }
+
+  &__cta {
+    display: flex;
+    justify-content: center;
   }
 }
