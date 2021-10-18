@@ -9,7 +9,7 @@ module.exports = {
   output: {
     filename: 'js/[name].[hash:8].js',
     path: __dirname + '/dist/',
-    assetModuleFilename: 'images/[name.[hash:8][ext][query]',
+    assetModuleFilename: 'images/[name].[hash:8][ext][query]',
   },
   module: {
     rules: [
@@ -62,7 +62,7 @@ module.exports = {
         test: /\.mp4$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'video/[hash:8][ext][query]',
+          filename: 'video/[name].[hash:8][ext][query]',
         },
       },
     ],
