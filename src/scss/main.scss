@@ -1,15 +1,19 @@
 // @import '_normalize';
-
 // @import '_fonts';
 @import '_variables';
 
 // @import 'modules/slider';
-@import 'modules/button';
 // @import 'modules/timer';
+
+@import 'modules/button';
+
 // @import 'modules/slider-nav';
+
 // @import 'modules/listing';
-// @import 'modules/infobox';
-@import 'modules/doublebox';
+
+@import 'modules/infobox';
+
+// @import 'modules/doublebox';
 
 body {
   background-color: $dark-grey;

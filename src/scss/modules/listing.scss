@@ -16,7 +16,7 @@
     url('https://fonts.pattyhell.com/fonts/v4uo8-96xdb.woff') format('woff');
 }
 
-.listing {
+.bf-listing {
   color: $main-color;
   background-color: $main-background-color;
   font-family: $main-font;
@@ -107,5 +107,13 @@
     font-size: $global-font-size-s;
     padding: 0 0 0 9px;
     margin: 0 0 25px;
+
+    @media (max-width: $breakpoint-tablet-width) {
+      width: 70%;
+    }
+  }
+
+  &__cta {
+    display: flex;
   }
 }

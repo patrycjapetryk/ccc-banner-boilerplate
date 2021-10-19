@@ -2,14 +2,6 @@
 @import '../_mixins';
 
 @font-face {
-  font-family: 'Univers LT W05_55 Roman';
-  src: url('https://fonts.pattyhell.com/fonts/7b452431-e4a6-48a8-8ba1-c6300f9384df.woff2')
-      format('woff2'),
-    url('https://fonts.pattyhell.com/fonts/95c27e18-fc4d-4c73-aef2-171dc6f1ddb3.woff')
-      format('woff');
-}
-
-@font-face {
   font-family: 'UniversLTPro-BoldExt';
   src: url('https://fonts.pattyhell.com/fonts/Linotype-UniversLTPro-BoldExt.woff2')
     format('woff2');
@@ -26,7 +18,7 @@
   width: 100%;
 }
 
-.slider {
+.bf-slider {
   color: $main-color;
   background-color: $main-background-color;
   font-family: $main-font;
