@@ -32,7 +32,7 @@
     no-repeat;
 
   @media (max-width: $breakpoint-laptop-width) {
-    background: transparent;
+    background: $main-background-color;
   }
 
   &__content {
@@ -69,7 +69,7 @@
   &__logo-container {
     width: 13%;
 
-    @media (max-width: $breakpoint-tablet-width) {
+    @media (max-width: $breakpoint-laptop-width) {
       width: 22%;
     }
   }
@@ -82,7 +82,7 @@
   &__title-container {
     width: 36%;
 
-    @media (max-width: $breakpoint-tablet-width) {
+    @media (max-width: $breakpoint-laptop-width) {
       width: 74%;
     }
   }
