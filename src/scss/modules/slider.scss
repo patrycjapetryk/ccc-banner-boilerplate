@@ -1,10 +1,12 @@
 @import '../_variables';
 @import '../_mixins';
 
-.slider {
+.c-zone_col {
+  width: 100%;
+}
+
+.jf-slider {
   color: $main-color;
-  // background-color: $main-background-color;
-  // font-family: $main-font;
   font-size: $global-font-size;
   line-height: $global-line-hight;
   font-weight: $global-font-weight;
@@ -26,7 +28,8 @@
     box-sizing: inherit;
   }
 
-  background: url(../assets/images/jf.jpg) $main-background-color no-repeat;
+  background: url(../assets/images/jenny-fairy.jpg) $main-background-color
+    no-repeat;
 
   @media (max-width: $breakpoint-laptop-width) {
     background: transparent;

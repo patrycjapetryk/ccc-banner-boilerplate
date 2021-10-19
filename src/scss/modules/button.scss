@@ -1,7 +1,7 @@
 @import '../_variables';
 @import '../_mixins';
 
-.button {
+.jf-button {
   font-family: $main-font;
   display: inline-block;
   padding: $button-padding;
@@ -22,5 +22,8 @@
   &:hover {
     background-color: $main-color;
     color: $main-background-color;
+  }
+
+  &--black {
   }
 }
