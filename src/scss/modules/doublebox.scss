@@ -16,7 +16,7 @@
     url('https://fonts.pattyhell.com/fonts/v4uo8-96xdb.woff') format('woff');
 }
 
-.square {
+.bf-doublebox {
   color: $main-color;
   background-color: $main-background-color;
   font-family: $main-font;
@@ -79,5 +79,10 @@
     font-family: $second-font;
     font-size: 22px;
     margin: -12px 0;
+  }
+
+  &__cta {
+    display: flex;
+    justify-content: center;
   }
 }
