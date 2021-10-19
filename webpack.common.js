@@ -78,20 +78,20 @@ module.exports = {
     //   minify: false,
     // }),
 
-    new HtmlWebpackPlugin({
-      template: './src/pages/slider.html',
-      inject: 'body',
-      chunks: ['index'],
-      filename: 'index.html',
-      minify: false,
-    }),
-
     // new HtmlWebpackPlugin({
-    //   template: './src/pages/doublebox.html',
+    //   template: './src/pages/slider.html',
     //   inject: 'body',
     //   chunks: ['index'],
     //   filename: 'index.html',
     //   minify: false,
     // }),
+
+    new HtmlWebpackPlugin({
+      template: './src/pages/doublebox.html',
+      inject: 'body',
+      chunks: ['index'],
+      filename: 'index.html',
+      minify: false,
+    }),
   ],
 };
