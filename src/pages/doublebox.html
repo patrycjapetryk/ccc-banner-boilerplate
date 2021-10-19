@@ -3,39 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CCC square</title>
+    <title>CCC doublebox</title>
     <meta name="description" content="" />
   </head>
   <body>
-    <div class="square">
+    <div class="doublebox">
       <video
-        class="square__video square__video--js"
+        class="doublebox__video doublebox__video--js"
         poster="../assets/images/jenny-fairy-poster.jpg"
         autoplay
         loop
         muted
         playsinline
+        preload="none"
       >
         <source src="../assets/video/jenny-fairy.webm" type="video/webm" />
         <source src="../assets/video/jenny-fairy.mp4" type="video/mp4" />
       </video>
 
-      <div class="square__content">
-        <div class="square__logo-container">
+      <div class="doublebox__content">
+        <div class="doublebox__logo-container">
           <img
-            class="square__logo"
+            class="doublebox__logo"
             src="../assets/images/jenny-fairy-logo.svg"
             alt=""
           />
         </div>
-        <div class="square__title-container">
+        <div class="doublebox__title-container">
           <img
-            class="square__image-title"
+            class="doublebox__image-title"
             src="../assets/images/jenny-fairy-title.svg"
             alt=""
           />
         </div>
-        <a class="button" href="#">zobacz kolekcję</a>
+        <a class="jf-button" href="#">zobacz kolekcję</a>
       </div>
     </div>
   </body>
