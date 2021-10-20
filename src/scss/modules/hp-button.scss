@@ -1,0 +1,43 @@
+@import '../_variables';
+@import '../_mixins';
+
+.hp-button {
+  display: block;
+  font-family: $main-font;
+  font-size: $button-font-size;
+  line-height: $button-line-height;
+  font-weight: 500;
+  border-radius: $button-border-radius;
+  color: $main-color;
+  background-color: $main-background-color;
+  text-decoration: none;
+  padding: $button-padding;
+  margin: 0 5px;
+  transition: 0.2s;
+
+  &--longer {
+    padding: $button-padding-longer;
+
+    @media (max-width: $breakpoint-tablet-width) {
+      padding: $button-padding-tablet;
+    }
+
+    @media (max-width: $breakpoint-mobile-width) {
+      padding: $button-padding-mobile;
+    }
+  }
+
+  @media (max-width: $breakpoint-tablet-width) {
+    padding: $button-padding-tablet;
+  }
+
+  @media (max-width: $breakpoint-mobile-width) {
+    flex-grow: 2;
+    padding: $button-padding-mobile;
+  }
+
+  // &:hover {
+  //   background-color: $main-color;
+  //   color: $main-background-color;
+  // }
+}

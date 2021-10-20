@@ -3,8 +3,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: {
     index: './src/js/index.js',
-    timer: './src/js/timer.js',
-    scroll: './src/js/scroll.js',
   },
   output: {
     filename: 'js/[name].[hash:8].js',
@@ -33,6 +31,11 @@ module.exports = {
               {
                 tag: 'img',
                 attribute: 'src',
+                type: 'src',
+              },
+              {
+                tag: 'source',
+                attribute: 'srcset',
                 type: 'src',
               },
               {
@@ -73,21 +76,13 @@ module.exports = {
     // new HtmlWebpackPlugin({
     //   template: './src/pages/index.html',
     //   inject: 'body',
-    //   chunks: ['index', ],
-    //   filename: 'index.html',
-    //   minify: false,
-    // }),
-
-    // new HtmlWebpackPlugin({
-    //   template: './src/pages/slider.html',
-    //   inject: 'body',
     //   chunks: ['index'],
     //   filename: 'index.html',
     //   minify: false,
     // }),
 
     new HtmlWebpackPlugin({
-      template: './src/pages/doublebox.html',
+      template: './src/pages/slider.html',
       inject: 'body',
       chunks: ['index'],
       filename: 'index.html',

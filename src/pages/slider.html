@@ -3,41 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CCC jf-slider</title>
+    <title>CCC hp-slider</title>
     <meta name="description" content="" />
   </head>
   <body>
-    <div class="jf-slider">
-      <video
-        class="jf-slider__video jf-slider__video--js"
-        poster="../assets/images/jenny-fairy-poster.jpg"
-        autoplay
-        loop
-        muted
-        playsinline
-        preload="none"
-      >
-        <source src="../assets/video/jenny-fairy.webm" type="video/webm" />
-        <source src="../assets/video/jenny-fairy.mp4" type="video/mp4" />
-      </video>
-
-      <div class="jf-slider__content">
-        <div class="jf-slider__logo-container">
-          <img
-            class="jf-slider__logo"
-            src="../assets/images/jenny-fairy-logo.svg"
-            alt=""
-          />
-        </div>
-        <div class="jf-slider__title-container">
-          <img
-            class="jf-slider__image-title"
-            src="../assets/images/jenny-fairy-title.svg"
-            alt=""
-          />
-        </div>
-        <a class="jf-button" href="#">zobacz kolekcję</a>
+    <div class="hp-slider">
+      <picture>
+        <source
+          media="(min-width:453px)"
+          srcset="../assets/images/desktop.jpeg"
+        />
+        <img
+          class="hp-slider__image"
+          src="../assets/images/mobile.jpeg"
+          alt=""
+        />
+      </picture>
+      <div class="hp-slider__cta">
+        <a class="hp-button hp-button--longer" href="#">Odkryj więcej</a>
       </div>
+      <!-- <div class="hp-slider__cta">
+        <a class="hp-button" href="#">Kobieta</a>
+        <a class="hp-button" href="#">Mężczyzna</a>
+        <a class="hp-button" href="#">Dziecko</a>
+      </div> -->
     </div>
   </body>
 </html>
