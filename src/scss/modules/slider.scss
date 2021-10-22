@@ -56,13 +56,14 @@
 
   &__video {
     position: absolute;
-    left: 50%;
+    // left: 50%;
+    left: 0;
     top: 0;
     width: auto;
-    height: 100%;
-    transform: translateX(-50%);
+    // height: 100%;
+    // transform: translateX(-50%);
 
-    object-fit: cover;
+    // object-fit: cover;
   }
 
   &__header {
