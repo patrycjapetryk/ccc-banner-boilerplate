@@ -20,6 +20,12 @@
     format('woff2');
 }
 
+@font-face {
+  font-family: 'Univers LT W05_55 Roman';
+  src: url('https://fonts.pattyhell.com/fonts/7b452431-e4a6-48a8-8ba1-c6300f9384df.woff2')
+    format('woff2');
+}
+
 .c-zone_col {
   width: 100%;
 }
@@ -100,7 +106,7 @@
   }
 
   &__subtitle {
-    font-family: $third-font;
+    font-family: $main-font-bold;
     display: inline-block;
     // font-family: $second-font;
     font-size: $global-font-size-m;
