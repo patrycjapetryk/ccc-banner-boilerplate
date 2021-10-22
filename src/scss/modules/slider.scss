@@ -14,6 +14,12 @@
     url('https://fonts.pattyhell.com/fonts/v4uo8-96xdb.woff') format('woff');
 }
 
+@font-face {
+  font-family: 'Linotype-UniversLTPro-BlackExt';
+  src: url('https://fonts.pattyhell.com/fonts/Linotype-UniversLTPro-BlackExt.woff2')
+    format('woff2');
+}
+
 .c-zone_col {
   width: 100%;
 }
@@ -56,14 +62,13 @@
 
   &__video {
     position: absolute;
-    // left: 50%;
-    left: 0;
+    left: 50%;
     top: 0;
     width: auto;
-    // height: 100%;
-    // transform: translateX(-50%);
+    height: 100%;
+    transform: translateX(-50%);
 
-    // object-fit: cover;
+    object-fit: cover;
   }
 
   &__header {
@@ -95,8 +100,9 @@
   }
 
   &__subtitle {
+    font-family: $third-font;
     display: inline-block;
-    font-family: $second-font;
+    // font-family: $second-font;
     font-size: $global-font-size-m;
     color: $main-color;
     margin: 0 0 15px;
