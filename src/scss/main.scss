@@ -2,8 +2,8 @@
 // @import '_fonts';
 @import '_variables';
 
-@import 'modules/slider';
-@import 'modules/timer';
+// @import 'modules/slider';
+// @import 'modules/timer';
 
 // @import 'modules/slider-nav';
 
@@ -11,9 +11,9 @@
 
 // @import 'modules/infobox';
 
-// @import 'modules/doublebox';
+@import 'modules/doublebox';
 
-// @import 'modules/button';
+@import 'modules/button';
 
 body {
   background-color: $dark-grey;
