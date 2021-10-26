@@ -4,7 +4,7 @@ const minutesElement = document.querySelector('.timer__time--minutes-js');
 const secondsElement = document.querySelector('.timer__time--seconds-js');
 
 // Set the date we're counting down to
-const COUNTDOWN_DATE = new Date('Oct 31, 2021 22:00:00').getTime();
+const COUNTDOWN_DATE = new Date('Nov 4, 2021 9:00:00').getTime();
 
 const addZeroBeforeTime = (number) => (number < 10 ? '0' + number : number);
 
