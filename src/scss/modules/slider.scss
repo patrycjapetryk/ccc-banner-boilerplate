@@ -62,9 +62,9 @@
   &__video {
     position: absolute;
     left: 50%;
-    bottom: 20px;
+    bottom: 0;
     width: auto;
-    height: 550px;
+    height: 500px;
     transform: translateX(-50%);
 
     object-fit: cover;
