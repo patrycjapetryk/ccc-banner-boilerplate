@@ -8,8 +8,8 @@ module.exports = {
   output: {
     filename: 'js/[name].[hash:8].js',
     path: __dirname + '/dist/',
-    assetModuleFilename: 'images/[name].[hash:8][ext][query]',
-    // assetModuleFilename: 'images/[name][ext][query]',
+    // assetModuleFilename: 'images/[name].[hash:8][ext][query]',
+    assetModuleFilename: 'images/[name][ext][query]',
   },
   module: {
     rules: [
