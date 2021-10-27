@@ -8,8 +8,8 @@ module.exports = {
   output: {
     filename: 'js/[name].[hash:8].js',
     path: __dirname + '/dist/',
-    // assetModuleFilename: 'images/[name].[hash:8][ext][query]',
-    assetModuleFilename: 'images/[name][ext][query]',
+    assetModuleFilename: 'images/[name].[hash:8][ext][query]',
+    // assetModuleFilename: 'images/[name][ext][query]',
   },
   module: {
     rules: [
@@ -90,20 +90,20 @@ module.exports = {
     //   filename: 'index.html',
     //   minify: false,
     // }),
-    new HtmlWebpackPlugin({
-      template: './src/pages/infobox-1.html',
-      inject: 'body',
-      chunks: ['index'],
-      filename: 'index.html',
-      minify: false,
-    }),
     // new HtmlWebpackPlugin({
-    //   template: './src/pages/doublebox.html',
+    //   template: './src/pages/infobox-1.html',
     //   inject: 'body',
     //   chunks: ['index'],
     //   filename: 'index.html',
     //   minify: false,
     // }),
+    new HtmlWebpackPlugin({
+      template: './src/pages/doublebox.html',
+      inject: 'body',
+      chunks: ['index'],
+      filename: 'index.html',
+      minify: false,
+    }),
     // new HtmlWebpackPlugin({
     //   template: './src/pages/slider-nav.html',
     //   inject: 'body',
