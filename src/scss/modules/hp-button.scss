@@ -11,33 +11,19 @@
   color: $main-color;
   background-color: $main-background-color;
   text-decoration: none;
+  border: 1px solid $black;
   padding: $button-padding;
-  margin: 0 5px;
-  transition: 0.2s;
+  margin: 5px;
 
-  &--longer {
-    padding: $button-padding-longer;
-
-    @media (max-width: $breakpoint-tablet-width) {
-      padding: $button-padding-tablet;
-    }
-
-    @media (max-width: $breakpoint-mobile-width) {
-      padding: $button-padding-mobile;
-    }
-  }
-
-  @media (max-width: $breakpoint-tablet-width) {
+  @media (max-width: $breakpoint-laptop-width) {
     padding: $button-padding-tablet;
   }
 
-  @media (max-width: $breakpoint-mobile-width) {
-    flex-grow: 2;
-    padding: $button-padding-mobile;
+  @media (max-width: $breakpoint-tablet-width) {
+    width: 46%;
   }
 
-  // &:hover {
-  //   background-color: $main-color;
-  //   color: $main-background-color;
-  // }
+  @media (max-width: $breakpoint-mobile-width) {
+    width: 100%;
+  }
 }

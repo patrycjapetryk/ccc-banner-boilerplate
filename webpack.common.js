@@ -73,16 +73,8 @@ module.exports = {
     ],
   },
   plugins: [
-    // new HtmlWebpackPlugin({
-    //   template: './src/pages/index.html',
-    //   inject: 'body',
-    //   chunks: ['index'],
-    //   filename: 'index.html',
-    //   minify: false,
-    // }),
-
     new HtmlWebpackPlugin({
-      template: './src/pages/slider.html',
+      template: './src/pages/buttons.html',
       inject: 'body',
       chunks: ['index'],
       filename: 'index.html',
