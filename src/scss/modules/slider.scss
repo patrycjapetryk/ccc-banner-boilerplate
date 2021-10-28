@@ -101,13 +101,17 @@
   &__subtitle {
     font-family: $main-font-bold;
     display: inline-block;
-    // font-family: $second-font;
     font-size: $global-font-size-m;
     color: $main-color;
+    display: block;
     // margin: 0 0 15px;
 
     @media (max-width: $breakpoint-mobile-width) {
       font-size: 23px;
+    }
+
+    &--small {
+      font-size: 20px;
     }
   }
 
