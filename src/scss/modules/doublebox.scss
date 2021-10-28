@@ -79,7 +79,8 @@
     color: $main-color;
     font-family: $second-font;
     font-size: 38px;
-    margin: -10px 0;
+    margin: 0 0 5px;
+    line-height: 1.2;
 
     @media (max-width: $breakpoint-mobile-width) {
       font-size: 28px;
