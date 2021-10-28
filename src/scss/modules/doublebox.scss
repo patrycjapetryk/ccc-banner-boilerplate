@@ -78,8 +78,8 @@
     display: block;
     color: $main-color;
     font-family: $second-font;
-    font-size: 38px;
-    margin: 0 0 5px;
+    font-size: 36px;
+    margin: 0 0 -4px;
     line-height: 1.2;
 
     @media (max-width: $breakpoint-mobile-width) {
