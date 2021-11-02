@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CCC BF SLIDER</title>
+    <meta name="description" content="" />
+  <style type="text/css">@font-face{font-family:"Helvetica Neue Black Extended";src:url("https://fonts.pattyhell.com/fonts/275e1e1e-08b1-4fe8-952b-5484d602fa4e.woff2") format("woff2")}@font-face{font-family:"Linotype-UniversLTPro-BlackExt";src:url("https://fonts.pattyhell.com/fonts/Linotype-UniversLTPro-BlackExt.woff2") format("woff2")}@font-face{font-family:"Univers LT W05_55 Roman";src:url("https://fonts.pattyhell.com/fonts/7b452431-e4a6-48a8-8ba1-c6300f9384df.woff2") format("woff2")}.c-zone_col{width:100%}.bf-slider{color:#fff;background-color:#000;font-family:"Univers LT W05_55 Roman",sans-serif;font-size:16px;line-height:1.4;font-weight:normal;letter-spacing:normal;width:100%;max-width:1300px;min-width:320px;height:500px;margin:0 auto;overflow:hidden;position:relative;text-align:center;text-transform:uppercase;box-sizing:border-box}.bf-slider *,.bf-slider *:before,.bf-slider *:after{box-sizing:inherit}.bf-slider__content{position:absolute;left:0;right:0;top:0;bottom:0;display:flex;align-items:center;justify-content:center}.bf-slider__video{position:absolute;left:50%;bottom:0;width:auto;height:500px;transform:translateX(-50%);-o-object-fit:cover;object-fit:cover}.bf-slider__header{width:100%;margin-top:30px}.bf-slider__title{font-family:"Helvetica Neue Black Extended",sans-serif;font-size:62px;color:#fff;margin:0}@media(max-width: 977px){.bf-slider__title{font-size:60px}}@media(max-width: 768px){.bf-slider__title{font-size:47px}}@media(max-width: 453px){.bf-slider__title{font-size:38px}}@media(max-width: 375px){.bf-slider__title{font-size:32px}}.bf-slider__subtitle{font-family:"Linotype-UniversLTPro-BlackExt",sans-serif;display:inline-block;font-size:26px;color:#fff;margin:0 0 15px}@media(max-width: 453px){.bf-slider__subtitle{font-size:23px}}.bf-slider__description{width:100%;font-size:12px;display:block;padding:0 30%}@media(max-width: 977px){.bf-slider__description{padding:0 20%}}@media(max-width: 453px){.bf-slider__description{padding:0 10%}}.bf-slider__cta{display:flex;justify-content:center}.timer{position:absolute;left:0;bottom:30px;width:100%;display:flex;flex-wrap:wrap;justify-content:center}.timer__title{width:100%;font-size:11px;font-weight:normal}.timer__time-wrapper{display:flex;flex-direction:column;align-items:center}.timer__time{font-family:"Linotype-UniversLTPro-BlackExt",sans-serif;font-size:45px}@media(max-width: 453px){.timer__time{font-size:38px}}@media(max-width: 375px){.timer__time{font-size:32px}}.timer__colon{font-family:"Linotype-UniversLTPro-BlackExt",sans-serif;font-size:40px;margin:0 7px 0 5px}@media(max-width: 453px){.timer__colon{font-size:38px}}@media(max-width: 375px){.timer__colon{font-size:32px}}.timer__label{margin-top:-5px;font-size:9px}body{background-color:#222;min-height:100vh}
+</style></head>
+  <body>
+    <div class="bf-slider">
+      <video
+        class="bf-slider__video"
+        poster="images/bf-slider-1-poster.jpg"
+        autoplay
+        loop
+        muted
+        playsinline
+        preload="none"
+      >
+        <source src="video/bf-slider-1.webm" type="video/webm" />
+        <source src="video/bf-slider-1.mp4" type="video/mp4" />
+      </video>
+
+      <div class="bf-slider__content">
+        <header class="bf-slider__header">
+          <h2 class="bf-slider__title">BLACK WEEK</h2>
+          <span class="bf-slider__subtitle">już wkrótce</span>
+        </header>
+
+        <div class="timer">
+          <h3 class="timer__title">DO ROZPOCZĘCIA PROMOCJI POZOSTAŁO:</h3>
+          <div class="timer__time-wrapper">
+            <span class="timer__time timer__time--days timer__time--days-js">
+              00
+            </span>
+            <span class="timer__label">DZIEŃ</span>
+          </div>
+          <span class="timer__colon">:</span>
+          <div class="timer__time-wrapper">
+            <span class="timer__time timer__time--hours timer__time--hours-js">
+              00
+            </span>
+            <span class="timer__label">GODZINA</span>
+          </div>
+          <span class="timer__colon">:</span>
+          <div class="timer__time-wrapper">
+            <span
+              class="timer__time timer__time--minutes timer__time--minutes-js"
+            >
+              00
+            </span>
+            <span class="timer__label">MINUTA</span>
+          </div>
+          <span class="timer__colon">:</span>
+          <div class="timer__time-wrapper">
+            <span
+              class="timer__time timer__time--seconds timer__time--seconds-js"
+            >
+              00
+            </span>
+            <span class="timer__label">SEKUNDA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script defer></script><script defer>(()=>{var e=document.querySelector(".timer__time--days-js"),t=document.querySelector(".timer__time--hours-js"),n=document.querySelector(".timer__time--minutes-js"),o=document.querySelector(".timer__time--seconds-js"),r=new Date("Nov 4, 2021 0:00:00").getTime(),m=function(e){return e<10?"0"+e:e},i=setInterval((function(){var u=(new Date).getTime(),a=r-u,c=Math.floor(a/864e5),l=Math.floor(a%864e5/36e5),s=Math.floor(a%36e5/6e4),x=Math.floor(a%6e4/1e3);a<=0?(clearInterval(i),e.textContent="00",t.textContent="00",n.textContent="00",o.textContent="00"):(e.textContent=m(c),t.textContent=m(l),n.textContent=m(s),o.textContent=m(x))}),1e3)})();</script></body>
+</html>
