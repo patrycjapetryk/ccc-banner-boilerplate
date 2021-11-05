@@ -5,17 +5,16 @@
 @import 'modules/slider';
 @import 'modules/timer';
 
-// @import 'modules/slider-nav';
-
-// @import 'modules/listing';
+@import 'modules/slider-nav';
 
 // @import 'modules/infobox';
 
-// @import 'modules/doublebox';
+@import 'modules/doublebox';
 
 @import 'modules/button';
 
 body {
-  background-color: $dark-grey;
+  // background-color: $dark-grey;
+  background-color: $violet;
   min-height: 100vh;
 }
