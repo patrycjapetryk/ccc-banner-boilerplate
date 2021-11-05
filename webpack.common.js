@@ -62,27 +62,27 @@ module.exports = {
         test: /\.mp4|webm$/i,
         type: 'asset/resource',
         generator: {
-          // filename: 'video/[name].[hash:8][ext][query]',
-          filename: 'video/[name][ext][query]',
+          filename: 'video/[name].[hash:8][ext][query]',
+          // filename: 'video/[name][ext][query]',
         },
       },
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin({
-      template: './src/pages/index.html',
-      inject: 'body',
-      chunks: ['index', 'timer'],
-      filename: 'index.html',
-      minify: false,
-    }),
     // new HtmlWebpackPlugin({
-    //   template: './src/pages/slider.html',
+    //   template: './src/pages/index.html',
     //   inject: 'body',
     //   chunks: ['index', 'timer'],
     //   filename: 'index.html',
     //   minify: false,
     // }),
+    new HtmlWebpackPlugin({
+      template: './src/pages/slider.html',
+      inject: 'body',
+      chunks: ['index', 'timer'],
+      filename: 'index.html',
+      minify: false,
+    }),
     // new HtmlWebpackPlugin({
     //   template: './src/pages/listing.html',
     //   inject: 'body',
