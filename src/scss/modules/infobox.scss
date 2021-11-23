@@ -44,8 +44,9 @@
     bottom: 0;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
+    padding-bottom: 20px;
   }
 
   &__video {

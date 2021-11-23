@@ -8,7 +8,8 @@ const secondsElement = document.querySelector('.timer__time--seconds-js');
 // const COUNTDOWN_DATE = new Date('Nov 9, 2021 0:00:00').getTime();
 // const COUNTDOWN_DATE = new Date('Nov 16, 2021 0:00:00').getTime();
 // const COUNTDOWN_DATE = new Date('Nov 12, 2021 10:00:00').getTime();
-const COUNTDOWN_DATE = new Date('Nov 26, 2021 0:00:00').getTime();
+// const COUNTDOWN_DATE = new Date('Nov 26, 2021 0:00:00').getTime();
+const COUNTDOWN_DATE = new Date('Nov 28, 2021 0:00:00').getTime();
 
 const addZeroBeforeTime = (number) => (number < 10 ? '0' + number : number);
 

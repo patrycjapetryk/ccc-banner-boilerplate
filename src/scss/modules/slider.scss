@@ -77,7 +77,9 @@
 
   &__title {
     font-family: $second-font;
-    font-size: $global-font-size-l;
+    // font-size: $global-font-size-l;
+    font-size: 60px;
+    line-height: 1;
     color: $main-color;
     margin: 0;
 
@@ -104,6 +106,7 @@
     font-size: $global-font-size-m;
     color: $main-color;
     display: block;
+    margin-top: 10px;
 
     // margin: 0 0 15px;
 
