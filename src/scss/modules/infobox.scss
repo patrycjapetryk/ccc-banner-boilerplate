@@ -46,7 +46,7 @@
     flex-wrap: wrap;
     align-items: flex-end;
     justify-content: center;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
   }
 
   &__video {
@@ -63,7 +63,7 @@
   &__title {
     display: block;
     font-family: $second-font;
-    font-size: $global-font-size-m;
+    font-size: 18px;
     margin: 0;
     line-height: 1;
   }
