@@ -17,7 +17,7 @@
   max-width: $slider-max-width;
   min-width: $baner-min-width;
   height: $slider-max-height;
-  margin: 0 auto;
+  margin: 0 auto 40px;
   overflow: hidden;
   position: relative;
   text-align: center;
@@ -46,14 +46,8 @@
 
   &__video {
     width: auto;
-<<<<<<< HEAD
-    height: 600px;
-    transform: translateX(-50%);
-
-=======
     height: 500px;
     display: block;
->>>>>>> black-week
     object-fit: cover;
 
     @media (max-width: $breakpoint-tablet-width) {
@@ -81,23 +75,15 @@
   }
 
   &__title {
-<<<<<<< HEAD
     font-family: $second-font;
-    // font-size: $global-font-size-l;
-    font-size: 50px;
-    line-height: 1;
-    color: $main-color;
-    margin: 0;
-=======
     font-size: 70px;
     margin: 20px 0 8px;
 
     grid-row: 1/2;
->>>>>>> black-week
 
-    // @media (max-width: $breakpoint-laptop-width) {
-    //   font-size: 60px;
-    // }
+    @media (max-width: $breakpoint-laptop-width) {
+      font-size: 60px;
+    }
 
     @media (max-width: $breakpoint-tablet-width) {
       font-size: 40px;

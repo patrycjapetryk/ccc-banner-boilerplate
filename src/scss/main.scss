@@ -2,19 +2,21 @@
 @import '_fonts';
 @import '_variables';
 
-@import 'modules/slider';
-// @import 'modules/timer';
+@import 'modules/_slider';
+// @import 'modules/_timer';
 
-// @import 'modules/slider-nav';
+// @import 'modules/_slider-nav';
 
-// @import 'modules/infobox';
+// @import 'modules/_infobox';
 
-@import 'modules/doublebox';
+@import 'modules/_doublebox';
 
-@import 'modules/button';
+@import 'modules/_brands-carousel';
+
+@import 'modules/_button';
 
 body {
-  background-color: $white;
+  background-color: $beige;
   min-height: 100vh;
   margin: 0;
 }
