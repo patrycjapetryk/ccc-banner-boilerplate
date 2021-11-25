@@ -64,7 +64,7 @@
     left: 50%;
     bottom: 0;
     width: auto;
-    height: 500px;
+    height: 600px;
     transform: translateX(-50%);
 
     object-fit: cover;
@@ -78,14 +78,14 @@
   &__title {
     font-family: $second-font;
     // font-size: $global-font-size-l;
-    font-size: 60px;
+    font-size: 50px;
     line-height: 1;
     color: $main-color;
     margin: 0;
 
-    @media (max-width: $breakpoint-laptop-width) {
-      font-size: 60px;
-    }
+    // @media (max-width: $breakpoint-laptop-width) {
+    //   font-size: 60px;
+    // }
 
     @media (max-width: $breakpoint-tablet-width) {
       font-size: 47px;
