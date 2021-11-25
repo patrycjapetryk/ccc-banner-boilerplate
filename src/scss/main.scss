@@ -1,20 +1,20 @@
 // @import '_normalize';
-// @import '_fonts';
+@import '_fonts';
 @import '_variables';
 
-// @import 'modules/slider';
+@import 'modules/slider';
 // @import 'modules/timer';
 
 // @import 'modules/slider-nav';
 
-@import 'modules/infobox';
+// @import 'modules/infobox';
 
-// @import 'modules/doublebox';
+@import 'modules/doublebox';
 
 @import 'modules/button';
 
 body {
-  background-color: $dark-grey;
+  background-color: $white;
   min-height: 100vh;
   margin: 0;
 }

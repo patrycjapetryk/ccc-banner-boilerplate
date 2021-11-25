@@ -6,14 +6,15 @@
   padding: $button-padding;
   font-size: $button-font-size;
   font-family: $button-font-family;
-  border: 1px solid $white;
+  border: 1px solid $main-color;
   color: $main-color;
+  background-color: $beige;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.02em;
   line-height: $global-line-hight;
   margin: 10px;
-  transition: 0.2s;
+  transition: 0.1s;
   border-radius: $button-border-radius;
 
   @media (max-width: $breakpoint-small-mobile-width) {
@@ -21,7 +22,7 @@
   }
 
   &:hover {
-    background-color: $white;
-    color: $black;
+    background-color: $main-color;
+    color: $white;
   }
 }
