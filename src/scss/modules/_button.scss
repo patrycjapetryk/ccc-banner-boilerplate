@@ -17,8 +17,9 @@
   transition: 0.1s;
   border-radius: $button-border-radius;
 
-  @media (max-width: $breakpoint-small-mobile-width) {
+  @media (max-width: $breakpoint-tablet-width) {
     padding: $button-padding-mobile;
+    font-size: $button-font-size-mobile;
   }
 
   &:hover {

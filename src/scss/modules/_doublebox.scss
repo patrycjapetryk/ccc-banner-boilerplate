@@ -68,12 +68,12 @@
     display: block;
     color: $main-color;
     font-family: $second-font;
-    font-size: 26px;
+    font-size: 23px;
     margin: 0;
     line-height: 1.2;
 
     @media (max-width: $breakpoint-mobile-width) {
-      font-size: 22px;
+      font-size: 21px;
     }
   }
 
