@@ -1,7 +1,7 @@
 @import '../_variables';
 @import '../_mixins';
 
-.xmas-doubleboxes {
+.festive-doubleboxes {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -9,7 +9,7 @@
   margin: 0 auto 40px;
 }
 
-.xmas-doublebox {
+.festive-doublebox {
   color: $main-color;
   background-color: $main-background-color;
   font-family: $main-font;
