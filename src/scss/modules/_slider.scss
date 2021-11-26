@@ -52,7 +52,8 @@
     object-fit: cover;
 
     @media (max-width: $breakpoint-tablet-width) {
-      height: 330px;
+      height: 358px;
+      margin-bottom: 10px;
     }
   }
 
@@ -111,7 +112,7 @@
 
     @media (max-width: $breakpoint-tablet-width) {
       top: auto;
-      bottom: 40px;
+      bottom: 35px;
     }
   }
 }

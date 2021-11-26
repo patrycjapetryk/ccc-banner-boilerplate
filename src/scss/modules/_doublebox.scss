@@ -46,6 +46,10 @@
     &--rotate-left {
       transform: rotate(-6deg);
     }
+
+    @media (max-width: $breakpoint-tablet-width) {
+      width: 65%;
+    }
   }
 
   &__header {
