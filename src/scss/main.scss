@@ -17,4 +17,12 @@
 
 .festive {
   background-color: $beige;
+
+  .c-zone_col {
+    width: 100%;
+  }
+
+  .c-zone_item a img {
+    width: auto;
+  }
 }
