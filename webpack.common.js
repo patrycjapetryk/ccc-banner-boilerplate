@@ -3,7 +3,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   entry: {
     index: './src/js/index.js',
-    timer: './src/js/timer.js',
   },
   output: {
     filename: 'js/[name].[hash:8].js',
@@ -72,7 +71,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/pages/index.html',
       inject: 'body',
-      chunks: ['index', 'timer'],
+      chunks: ['index'],
       filename: 'index.html',
       minify: false,
     }),
