@@ -16,7 +16,14 @@ module.exports = merge(common, {
           MiniCssExtractPlugin.loader,
           'css-loader',
           'postcss-loader',
-          'sass-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              sassOptions: {
+                outputStyle: 'expanded',
+              },
+            },
+          },
         ],
       },
     ],
@@ -31,4 +38,8 @@ module.exports = merge(common, {
     }),
     new HTMLInlineCSSWebpackPlugin(),
   ],
+  // optimization: {
+  // We no not want to minimize our code.
+  // minimize: false,
+  // },
 });
