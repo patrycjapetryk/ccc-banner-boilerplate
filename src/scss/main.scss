@@ -14,15 +14,19 @@
 @import 'modules/_brands-carousel';
 
 @import 'modules/_button';
+@import 'modules/_background';
 
 .festive {
-  background-color: $beige;
+  // background-color: $beige;
+  position: relative;
+  // max-width: 1300px;
+  // margin: 0 auto;
+}
 
-  .c-zone_col {
-    width: 100%;
-  }
+.c-zone_col {
+  width: 100%;
+}
 
-  .c-zone_item a img {
-    width: auto;
-  }
+.c-zone_item a img {
+  width: auto;
 }
