@@ -16,13 +16,6 @@
   text-align: center;
   text-transform: uppercase;
 
-  box-sizing: border-box;
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-
   @media (max-width: $breakpoint-tablet-width) {
     width: 100%;
   }

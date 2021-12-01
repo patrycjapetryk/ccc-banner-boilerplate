@@ -18,13 +18,6 @@
   position: relative;
   text-align: center;
 
-  box-sizing: border-box;
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-
   &__content {
     position: absolute;
     left: 0;
