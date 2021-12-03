@@ -6,10 +6,11 @@ $beige: #fef9fb;
 $dark-grey: #222222;
 $light-grey: #f8f8f8;
 $violet: #a66ea6;
+$red: #e12d3d;
 
 $main-color: $black;
-$second-color: $beige;
-$main-background-color: $beige;
+$second-color: $red;
+$main-background-color: $red;
 
 // fonts family
 
@@ -32,8 +33,8 @@ $global-letter-spacing: normal;
 //button
 
 $button-font-family: 'Univers LT W05_55 Roman', sans-serif;
-$button-font-size: 12px;
-$button-font-size-mobile: 10px;
+$button-font-size: 11px;
+$button-font-size-mobile: 9px;
 $button-padding: 11px 40px 9px;
 $button-padding-mobile: 8px 30px;
 $button-border-radius: 0;
@@ -52,7 +53,7 @@ $breakpoint-small-mobile-width: 375px;
 $baner-min-width: 320px;
 
 $slider-max-width: 1300px;
-$slider-max-height: 500px;
+$slider-max-height: 600px;
 
 $listing-max-width: 1300px;
 $listing-max-height: 340px;

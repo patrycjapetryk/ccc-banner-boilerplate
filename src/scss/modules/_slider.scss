@@ -1,7 +1,7 @@
 @import '../_variables';
 @import '../_mixins';
 
-.festive-slider {
+.sale-slider {
   color: $main-color;
   background-color: $main-background-color;
   font-family: $main-font;
@@ -12,101 +12,105 @@
   width: 100%;
   max-width: $slider-max-width;
   min-width: $baner-min-width;
-  height: $slider-max-height;
-  margin: 0 auto 40px;
+  margin: 0 auto;
   overflow: hidden;
   position: relative;
-  text-align: center;
+  text-align: left;
+  display: flex;
+  height: 500px;
+
+  @media (min-width: $breakpoint-tablet-width) {
+    height: 600px;
+    text-align: center;
+  }
 
   &__content {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-
+    width: 48%;
+    height: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    @media (max-width: $breakpoint-tablet-width) {
-      justify-content: center;
-    }
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 0;
   }
 
   &__video {
     width: auto;
-    height: 500px;
+    height: 530px;
     display: block;
-    object-fit: cover;
-
-    @media (max-width: $breakpoint-tablet-width) {
-      height: 358px;
-      margin-bottom: 10px;
-    }
   }
 
-  &__photo {
-    display: block;
-
-    @media (max-width: $breakpoint-tablet-width) {
-      display: none;
-    }
-  }
-
-  &__title {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-
+  &__header {
+    width: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
 
-  &__title-span {
+  &__title {
+    width: 80%;
     font-family: $second-font;
-    font-size: 70px;
+    font-size: 22px;
     font-weight: normal;
     line-height: 1.1;
-    margin: 20px 0 8px;
+    margin: 5px 0;
 
-    width: 100%;
-
-    @media (max-width: $breakpoint-laptop-width) {
-      font-size: 60px;
+    @media (min-width: $breakpoint-mobile-width) {
+      font-size: 30px;
     }
-
-    @media (max-width: $breakpoint-tablet-width) {
-      font-size: 35px;
-      margin: 8px 0 0;
+    @media (min-width: $breakpoint-tablet-width) {
+      font-size: 42px;
+      letter-spacing: 0.03em;
     }
+  }
 
-    @media (max-width: $breakpoint-small-mobile-width) {
-      font-size: 31px;
+  &__subtitle {
+    width: 80%;
+    font-family: $second-font;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 1.1;
+    margin: 5px 0;
+
+    @media (min-width: $breakpoint-mobile-width) {
+      font-size: 30px;
+    }
+    @media (min-width: $breakpoint-tablet-width) {
+      position: relative;
+      font-size: 95px;
+      letter-spacing: -0.02em;
+
+      span {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        font-size: 13px;
+        transform: translate(-103px, -25px);
+        letter-spacing: 0.07em;
+      }
     }
   }
 
   &__cta {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    width: 80%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    cursor: pointer;
 
-    @media (max-width: $breakpoint-tablet-width) {
-      top: auto;
-      bottom: 35px;
+    @media (min-width: $breakpoint-tablet-width) {
+      justify-content: center;
     }
   }
 
   &__link {
     color: inherit;
     text-decoration: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
   }
 }
