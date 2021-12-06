@@ -1,19 +1,18 @@
 @import '../_variables';
 @import '../_mixins';
 
-.festive-button {
+.button {
   display: block;
   padding: $button-padding;
   font-size: $button-font-size;
   font-family: $button-font-family;
   border: 1px solid $main-color;
   color: $main-color;
-  background-color: $beige;
+  background-color: transparent;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0.02em;
   line-height: $global-line-hight;
-  margin: 8px 0;
   transition: 0.1s;
   border-radius: $button-border-radius;
 
