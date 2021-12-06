@@ -26,10 +26,10 @@
     height: auto;
     object-fit: cover;
     margin: 45px auto 130px;
-    transform: rotate(7deg);
+    // transform: rotate(7deg);
 
     &--rotate-left {
-      transform: rotate(-6deg);
+      // transform: rotate(-6deg);
     }
 
     @media (max-width: $breakpoint-tablet-width) {

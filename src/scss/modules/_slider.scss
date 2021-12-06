@@ -35,12 +35,14 @@
   }
 
   &__video {
-    width: auto;
+    // width: auto;
+    width: 33.35%;
     height: 500px;
     display: block;
     object-fit: cover;
 
     @media (max-width: $breakpoint-tablet-width) {
+      width: 50%;
       height: 358px;
       margin-bottom: 10px;
     }
@@ -48,6 +50,9 @@
 
   &__photo {
     display: block;
+    width: 33.33%;
+    height: 500px;
+    object-fit: cover;
 
     @media (max-width: $breakpoint-tablet-width) {
       display: none;
@@ -62,9 +67,15 @@
     bottom: 0;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: $breakpoint-tablet-width) {
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 
   &__title-span {
@@ -73,8 +84,9 @@
     font-weight: normal;
     line-height: 1.1;
     margin: 20px 0 8px;
+    color: $white;
 
-    width: 100%;
+    width: 33.33%;
 
     @media (max-width: $breakpoint-laptop-width) {
       font-size: 60px;
@@ -83,6 +95,8 @@
     @media (max-width: $breakpoint-tablet-width) {
       font-size: 35px;
       margin: 8px 0 0;
+      width: 100%;
+      color: $main-color;
     }
 
     @media (max-width: $breakpoint-small-mobile-width) {
