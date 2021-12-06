@@ -1,13 +1,23 @@
-<!DOCTYPE html>
-<html lang="pl">
-  <head> </head>
-  <body>
-    <script>
-      const slider = {
+<head>
+  <script>
+    const slider = {
+      url: '#',
+      title: 'WYPRZEDAŻ',
+      discount: '40',
+      upto: 'do',
+      linkEvent: {
+        event: 'gaevent',
+        category: 'banner_sg_click',
+        action: 'FestiveSeason',
+        pageType: 'home',
+        label: 'dbb click',
+      },
+    };
+
+    const sliderNavigation = [
+      {
         url: '#',
-        title: 'WYPRZEDAŻ',
-        discount: '40',
-        upto: 'do',
+        text: 'KOBIETA',
         linkEvent: {
           event: 'gaevent',
           category: 'banner_sg_click',
@@ -15,59 +25,46 @@
           pageType: 'home',
           label: 'dbb click',
         },
-      };
-
-      const sliderNavigation = [
-        {
-          url: '#',
-          text: 'KOBIETA',
-          linkEvent: {
-            event: 'gaevent',
-            category: 'banner_sg_click',
-            action: 'FestiveSeason',
-            pageType: 'home',
-            label: 'dbb click',
-          },
+      },
+      {
+        url: '#',
+        text: ' MĘŻCZYZNA',
+        linkEvent: {
+          event: 'gaevent',
+          category: 'banner_sg_click',
+          action: 'FestiveSeason',
+          pageType: 'home',
+          label: 'dbb click',
         },
-        {
-          url: '#',
-          text: ' MĘŻCZYZNA',
-          linkEvent: {
-            event: 'gaevent',
-            category: 'banner_sg_click',
-            action: 'FestiveSeason',
-            pageType: 'home',
-            label: 'dbb click',
-          },
+      },
+      {
+        url: '#',
+        text: 'DZIECKO',
+        linkEvent: {
+          event: 'gaevent',
+          category: 'banner_sg_click',
+          action: 'FestiveSeason',
+          pageType: 'home',
+          label: 'dbb click',
         },
-        {
-          url: '#',
-          text: 'DZIECKO',
-          linkEvent: {
-            event: 'gaevent',
-            category: 'banner_sg_click',
-            action: 'FestiveSeason',
-            pageType: 'home',
-            label: 'dbb click',
-          },
+      },
+      {
+        url: '#',
+        text: ' TOREBKI',
+        linkEvent: {
+          event: 'gaevent',
+          category: 'banner_sg_click',
+          action: 'FestiveSeason',
+          pageType: 'home',
+          label: 'dbb click',
         },
-        {
-          url: '#',
-          text: ' TOREBKI',
-          linkEvent: {
-            event: 'gaevent',
-            category: 'banner_sg_click',
-            action: 'FestiveSeason',
-            pageType: 'home',
-            label: 'dbb click',
-          },
-        },
-      ];
-    </script>
-
-    <div class="main-banner">
-      <section class="sale-slider sale-slider--js"></section>
-      <div class="slider-nav slider-nav--js"></div>
-    </div>
-  </body>
-</html>
+      },
+    ];
+  </script>
+</head>
+<body>
+  <div class="main-banner">
+    <section class="sale-slider sale-slider--js"></section>
+    <div class="slider-nav slider-nav--js"></div>
+  </div>
+</body>
