@@ -1,70 +1,102 @@
-<head>
-  <script>
-    const slider = {
-      url: '#',
-      title: 'WYPRZEDAŻ',
-      discount: '40',
-      upto: 'do',
-      linkEvent: {
-        event: 'gaevent',
-        category: 'banner_sg_click',
-        action: 'FestiveSeason',
-        pageType: 'home',
-        label: 'dbb click',
-      },
-    };
-
-    const sliderNavigation = [
-      {
-        url: '#',
-        text: 'KOBIETA',
-        linkEvent: {
-          event: 'gaevent',
-          category: 'banner_sg_click',
-          action: 'FestiveSeason',
-          pageType: 'home',
-          label: 'dbb click',
-        },
-      },
-      {
-        url: '#',
-        text: ' MĘŻCZYZNA',
-        linkEvent: {
-          event: 'gaevent',
-          category: 'banner_sg_click',
-          action: 'FestiveSeason',
-          pageType: 'home',
-          label: 'dbb click',
-        },
-      },
-      {
-        url: '#',
-        text: 'DZIECKO',
-        linkEvent: {
-          event: 'gaevent',
-          category: 'banner_sg_click',
-          action: 'FestiveSeason',
-          pageType: 'home',
-          label: 'dbb click',
-        },
-      },
-      {
-        url: '#',
-        text: ' TOREBKI',
-        linkEvent: {
-          event: 'gaevent',
-          category: 'banner_sg_click',
-          action: 'FestiveSeason',
-          pageType: 'home',
-          label: 'dbb click',
-        },
-      },
-    ];
-  </script>
-</head>
+<head> </head>
 <body>
   <div class="main-banner">
-    <section class="sale-slider sale-slider--js"></section>
-    <div class="slider-nav slider-nav--js"></div>
+    <section class="sale-slider sale-slider--js">
+      <a
+        href="#"
+        class="sale-slider__link"
+        onclick="(()=>{
+          dataLayer.push({
+            event: 'event',
+            category: 'category',
+            action: 'action',
+            pageType: 'pageType',
+            label: 'label',
+          });
+        })()"
+      >
+        <header class="sale-slider__header">
+          <h2 class="sale-slider__title">WYPRZEDAŻ</h2>
+          <p class="sale-slider__subtitle">
+            <span class="sale-slider__span">DO</span> -40%
+          </p>
+        </header>
+
+        <figure class="sale-slider__content">
+          <video
+            class="sale-slider__video"
+            autoplay
+            loop
+            muted
+            playsinline
+            preload="none"
+          >
+            <source src="../assets/video/sale.mp4" type="video/mp4" />
+          </video>
+        </figure>
+      </a>
+    </section>
+    <div class="slider-nav slider-nav--js">
+      <a
+        href="#"
+        class="slider-nav__button slider-nav__button--background"
+        onclick="(()=>{
+        dataLayer.push({
+          event: 'event',
+          category: 'category',
+          action: 'action',
+          pageType: 'pageType',
+          label: 'label',
+        });
+      })()"
+      >
+        Kobieta
+      </a>
+      <a
+        href="#"
+        class="slider-nav__button slider-nav__button--background"
+        onclick="(()=>{
+        dataLayer.push({
+          event: 'event',
+          category: 'category',
+          action: 'action',
+          pageType: 'pageType',
+          label: 'label',
+        });
+      })()"
+      >
+        Mężczyzna
+      </a>
+      <a
+        href="#"
+        class="slider-nav__button slider-nav__button--background"
+        onclick="(()=>{
+        dataLayer.push({
+          event: 'event',
+          category: 'category',
+          action: 'action',
+          pageType: 'pageType',
+          label: 'label',
+        });
+      })()"
+      >
+        Dziecko
+      </a>
+      <a
+        href="#"
+        class="slider-nav__button slider-nav__button--background"
+        onclick="(()=>{
+        dataLayer.push({
+          event: 'event',
+          category: 'category',
+          action: 'action',
+          pageType: 'pageType',
+          label: 'label',
+        });
+      })()"
+      >
+        Torebki
+      </a>
+    </div>
   </div>
 </body>
