@@ -2,24 +2,18 @@
 @import '../_mixins';
 
 .slider-nav {
-  background-color: $main-background-color;
   width: 100%;
   padding: 30px 0;
-  // height: 100px;
   max-width: $slider-max-width;
-  margin: 0 auto;
+  text-align: center;
+
   display: flex;
   row-gap: 8px;
   column-gap: 12px;
-
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   align-content: center;
-  text-align: center;
-
-  @media (max-width: $breakpoint-tablet-width) {
-    flex-wrap: wrap;
-  }
 
   &__button {
     display: block;
@@ -27,35 +21,25 @@
     font-size: $button-font-size;
     font-family: $button-font-family;
     border: 1px solid $main-color;
-    color: $main-color;
-    background-color: transparent;
+    background-color: $main-color;
+    color: $white;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0.02em;
     line-height: $global-line-hight;
     transition: 0.1s;
     border-radius: $button-border-radius;
+    width: 38%;
 
     @media (max-width: $breakpoint-tablet-width) {
       padding: $button-padding-mobile;
       font-size: $button-font-size-mobile;
-      width: 45%;
     }
 
     &:hover {
-      background-color: $main-color;
-      color: $white;
-    }
-
-    &--background {
-      background-color: $main-color;
-      color: $white;
-
-      &:hover {
-        color: $main-color;
-        background-color: $white;
-        border: 1px solid $white;
-      }
+      color: $main-color;
+      background-color: $white;
+      border: 1px solid $white;
     }
   }
 }
