@@ -1,7 +1,7 @@
 @import '../_variables';
 @import '../_mixins';
 
-.sale-slider {
+.slider {
   color: $main-color;
   background-color: $main-background-color;
   font-family: $main-font;
@@ -59,71 +59,9 @@
     }
   }
 
-  &__header {
-    position: absolute;
-    right: 9%;
-    top: 5%;
-    width: 40%;
-    height: 100%;
-
+  &__navigation {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-
-    @media (max-width: $breakpoint-tablet-width) {
-      right: 0;
-      top: auto;
-      bottom: 0;
-      width: 100%;
-      height: auto;
-    }
-  }
-
-  &__title {
-    width: 80%;
-    font-family: $second-font;
-    font-size: 22px;
-    letter-spacing: 0.03em;
-    font-weight: normal;
-    text-transform: uppercase;
-    line-height: 1.1;
-    margin: 5px 0;
-
-    @media (min-width: $breakpoint-mobile-width) {
-      font-size: 30px;
-    }
-    @media (min-width: $breakpoint-tablet-width) {
-      font-size: 42px;
-    }
-  }
-
-  &__subtitle {
-    width: 80%;
-    font-family: $second-font;
-    text-transform: uppercase;
-    font-size: 22px;
-    font-weight: normal;
-    line-height: 1.1;
-    margin: 5px 0;
-
-    @media (min-width: $breakpoint-mobile-width) {
-      font-size: 30px;
-    }
-    @media (min-width: $breakpoint-tablet-width) {
-      position: relative;
-      font-size: 95px;
-      letter-spacing: -0.02em;
-      transform: translateX(-8px);
-
-      span {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        font-size: 13px;
-        transform: translate(-103px, -25px);
-        letter-spacing: 0.07em;
-      }
-    }
+    padding-top: 40px;
   }
 }
