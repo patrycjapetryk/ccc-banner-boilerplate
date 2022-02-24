@@ -7,7 +7,7 @@
   font-size: $button-font-size;
   font-family: $button-font-family;
   border: 1px solid $main-color;
-  color: $main-color;
+  color: $main-color !important;
   background-color: transparent;
   text-transform: uppercase;
   text-decoration: none;
@@ -23,15 +23,15 @@
 
   &:hover {
     background-color: $main-color;
-    color: $white;
+    color: $white !important;
   }
 
   &--background {
     background-color: $main-color;
-    color: $white;
+    color: $white !important;
 
     &:hover {
-      color: $main-color;
+      color: $main-color !important;
       background-color: $white;
       // border: 1px solid $white;
     }
