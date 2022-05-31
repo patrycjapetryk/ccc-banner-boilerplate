@@ -21,8 +21,7 @@
 
   &__button {
     display: block;
-    padding: $button-padding;
-    font-size: $button-font-size;
+    font-size: $button-font-size-mobile;
     font-family: $button-font-family;
     border: 1px solid $main-color;
     background-color: $main-color;
@@ -33,12 +32,17 @@
     line-height: $global-line-hight;
     transition: 0.1s;
     border-radius: $button-border-radius;
-    width: 15%;
+    padding: $button-padding-mobile;
+    width: 46%;
 
-    @media (max-width: $breakpoint-tablet-width) {
-      width: 38%;
-      padding: $button-padding-mobile;
-      font-size: $button-font-size-mobile;
+    @media (min-width: $breakpoint-mobile-width) {
+      width: 22%;
+      font-size: $button-font-size;
+      padding: $button-padding;
+    }
+
+    @media (min-width: $breakpoint-laptop-width) {
+      width: 15%;
     }
 
     &:hover {
