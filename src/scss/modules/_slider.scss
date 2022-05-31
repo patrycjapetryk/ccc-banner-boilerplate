@@ -89,11 +89,10 @@
     }
     @media (min-width: $breakpoint-tablet-width) {
       font-size: 330px;
+      margin: 20px 0 -75px;
       transform: translateX(20px);
     }
-    @media (min-width: $breakpoint-laptop-width) {
-      margin: 20px 0 -65px;
-    }
+
     @media (min-width: $slider-max-width) {
       font-size: 370px;
       margin: 20px 0 -85px;
@@ -131,6 +130,11 @@
 
       @media (min-width: $breakpoint-mobile-width) {
         top: 3px;
+      }
+
+      @media (min-width: $breakpoint-tablet-width) {
+        top: 12px;
+        left: 3px;
       }
     }
   }
