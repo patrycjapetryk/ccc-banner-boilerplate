@@ -3,9 +3,13 @@
 
 .slider-nav {
   width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
   padding: 30px 0;
   max-width: $slider-max-width;
   text-align: center;
+  // background-color: blue;
 
   display: flex;
   row-gap: 8px;
@@ -29,9 +33,10 @@
     line-height: $global-line-hight;
     transition: 0.1s;
     border-radius: $button-border-radius;
-    width: 38%;
+    width: 15%;
 
     @media (max-width: $breakpoint-tablet-width) {
+      width: 38%;
       padding: $button-padding-mobile;
       font-size: $button-font-size-mobile;
     }

@@ -4,100 +4,29 @@
 
 <body>
   <section class="sale-slider">
-    <video
-      class="sale-slider__video"
-      autoplay
-      loop
-      muted
-      playsinline
-      preload="none"
-    >
-      <source src="../assets/video/sale.mp4" type="video/mp4" />
-    </video>
-
-    <a
-      href="#"
-      class="sale-slider__link"
-      onclick="(function(){
-        dataLayer.push({
-          event: 'event',
-          category: 'category',
-          action: 'action',
-          pageType: 'pageType',
-          label: 'label',
-        });
-      })()"
-    ></a>
-
     <header class="sale-slider__header">
-      <h2 class="sale-slider__title">WYPRZEDAŻ</h2>
+      <h2 class="sale-slider__title">SALE</h2>
 
       <p class="sale-slider__subtitle">
-        <span class="sale-slider__span">DO</span>-30%
+        <span class="sale-slider__span">DO</span>-40%
       </p>
-
-      <nav class="slider-nav">
-        <a
-          href="#"
-          class="slider-nav__button slider-nav__button--background"
-          onclick="(()=>{
-              dataLayer.push({
-                event: 'event',
-                category: 'category',
-                action: 'action',
-                pageType: 'pageType',
-                label: 'label',
-              });
-            })()"
-        >
-          Kobieta
-        </a>
-        <a
-          href="#"
-          class="slider-nav__button slider-nav__button--background"
-          onclick="(()=>{
-              dataLayer.push({
-                event: 'event',
-                category: 'category',
-                action: 'action',
-                pageType: 'pageType',
-                label: 'label',
-              });
-            })()"
-        >
-          Mężczyzna
-        </a>
-        <a
-          href="#"
-          class="slider-nav__button slider-nav__button--background"
-          onclick="(()=>{
-              dataLayer.push({
-                event: 'event',
-                category: 'category',
-                action: 'action',
-                pageType: 'pageType',
-                label: 'label',
-              });
-            })()"
-        >
-          Dziecko
-        </a>
-        <a
-          href="#"
-          class="slider-nav__button slider-nav__button--background"
-          onclick="(()=>{
-              dataLayer.push({
-                event: 'event',
-                category: 'category',
-                action: 'action',
-                pageType: 'pageType',
-                label: 'label',
-              });
-            })()"
-        >
-          Torebki
-        </a>
-      </nav>
     </header>
+
+    <a href="#" class="sale-slider__link"></a>
+
+    <nav class="slider-nav">
+      <a href="#" class="slider-nav__button slider-nav__button--background">
+        Kobieta
+      </a>
+      <a href="#" class="slider-nav__button slider-nav__button--background">
+        Mężczyzna
+      </a>
+      <a href="#" class="slider-nav__button slider-nav__button--background">
+        Dziecko
+      </a>
+      <a href="#" class="slider-nav__button slider-nav__button--background">
+        Torebki
+      </a>
+    </nav>
   </section>
 </body>
