@@ -41,6 +41,16 @@ module.exports = {
               },
               {
                 tag: 'source',
+                attribute: 'data-src',
+                type: 'src',
+              },
+              {
+                tag: 'source',
+                attribute: 'srcset',
+                type: 'src',
+              },
+              {
+                tag: 'source',
                 attribute: 'src',
                 type: 'src',
               },
