@@ -70,7 +70,7 @@
       font-size: 74px;
     }
     @media (min-width: $breakpoint-laptop-width) {
-      font-size: 120px;
+      font-size: 95px;
     }
   }
 
@@ -93,7 +93,7 @@
       margin-right: 18px;
     }
     @media (min-width: $breakpoint-laptop-width) {
-      font-size: 120px;
+      font-size: 90px;
     }
 
     span {
@@ -115,9 +115,9 @@
         left: 2px;
       }
       @media (min-width: $breakpoint-laptop-width) {
-        font-size: 14px;
-        top: 26px;
-        left: 5px;
+        font-size: 13px;
+        top: 20px;
+        left: 4px;
       }
     }
   }
