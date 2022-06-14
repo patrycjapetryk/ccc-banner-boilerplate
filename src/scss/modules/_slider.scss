@@ -54,7 +54,7 @@
 
   &__title {
     font-family: $second-font;
-    font-size: 42px;
+    font-size: 20px;
     letter-spacing: 0.1em;
     font-weight: normal;
     text-transform: uppercase;
@@ -64,13 +64,13 @@
     margin: 0;
 
     @media (min-width: $breakpoint-mobile-width) {
-      font-size: 50px;
+      font-size: 30px;
     }
     @media (min-width: $breakpoint-tablet-width) {
-      font-size: 74px;
+      font-size: 54px;
     }
     @media (min-width: $breakpoint-laptop-width) {
-      font-size: 95px;
+      font-size: 71px;
     }
   }
 
